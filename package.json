@@ -1,0 +1,14 @@
+{
+  "name": "tablefinder",
+  "version": "1.0.0",
+  "description": "Restaraunt Reservation App",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/sass.scss css/style.css -w"
+  },
+  "author": "Jalen Parham",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  }
+}
