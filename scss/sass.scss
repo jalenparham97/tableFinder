@@ -18,11 +18,10 @@ $box-shadow: rgba(0,0,0,0.3);
 body {
   background: $color-primary;
   font-family: 'Roboto Mono', monospace;
-  // padding-bottom: 300px;
 }
 
 .header {
-  margin: 100px auto;
+  margin: 60px auto 50px auto;
   width: 50%;
   text-align: center;
 
@@ -45,9 +44,9 @@ body {
   justify-content: center;
   grid-gap: 30px;
   background: $color-grey--3;
-  max-width: 400px;
+  max-width: 300px;
   margin: 0 auto;
-  padding: 30px;
+  padding: 30px 50px;;
   border-radius: 5px;
 
   & .available, .reserved {
@@ -82,64 +81,70 @@ body {
   position: absolute;
   width: 100%;
   top: 200px;
-}
 
-.form , .hidden {
-  background: $color-white;
-  width: 55%;
-  margin: 0 auto;
-  z-index: 100;
-  flex-direction: column;
-  padding: 40px 40px 40px 40px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 31px 1px $box-shadow;
-  max-width: 500px;
-
-
-  &__title {
-    margin-bottom: 20px;
-    color: $color-secondary;
+  & .form {
+    display: none;
+  }
+  
+  & .hidden {
+    display: none;
   }
 
-  &__input {
-    display: flex;
-    width: 100%;
-    border: 0;
-    border-bottom: 1px solid $color-grey--2;
-    padding-bottom: 10px;
-    margin: 40px 0;
-    outline: none;
-    font-size: 16px;
-  }
-
-  &__button {
-    width: 100%;
-    padding: 10px;
-    border-radius: 3px;
-    background: $color-terchiary;
-    color: $color-white;
-    text-transform: uppercase;
-    cursor: pointer;
-    margin-top: 20px;
-    box-shadow: 0px 5px 15px 1px $box-shadow;
-  }
-
-  & .delete {
-    display: flex;
-    justify-content: flex-end;
-    text-decoration: none;
-    color: $color-black;
-    font-size: 20px;
+  & .form , .hidden {
+    background: $color-white;
+    width: 55%;
+    margin: 0 auto;
+    z-index: 100;
+    flex-direction: column;
+    padding: 40px 40px 40px 40px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 31px 1px $box-shadow;
+    max-width: 500px;
+  
+  
+    &__title {
+      margin-bottom: 20px;
+      color: $color-secondary;
+    }
+  
+    &__input {
+      display: flex;
+      width: 100%;
+      border: 0;
+      border-bottom: 1px solid $color-grey--2;
+      padding-bottom: 10px;
+      margin: 40px 0;
+      outline: none;
+      font-size: 16px;
+    }
+  
+    &__button {
+      width: 100%;
+      padding: 10px;
+      border-radius: 3px;
+      background: rgba($color-terchiary, .8);
+      color: $color-white;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-top: 20px;
+      
+      &:hover {
+        box-shadow: 0px 5px 15px 1px $box-shadow;
+        background: $color-terchiary;
+      }
+    }
+  
+    & .delete {
+      display: flex;
+      justify-content: flex-end;
+      text-decoration: none;
+      color: $color-black;
+      font-size: 20px;
+    }
   }
 }
 
-.form {
-  display: none;
-}
 
-.hidden {
-  display: none;
-}
 
 
 
