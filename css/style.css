@@ -45,7 +45,8 @@ body {
       background: #ADAAAA;
       box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.3); }
   .floor__plan--container .reserved {
-    background: #ADAAAA; }
+    background: #ADAAAA;
+    color: #EEE; }
     .floor__plan--container .reserved:hover {
       cursor: not-allowed; }
 
@@ -54,10 +55,7 @@ body {
   width: 100%;
   top: 200px; }
   .form__container .form {
-    display: none; }
-  .form__container .hidden {
-    display: none; }
-  .form__container .form, .form__container .hidden {
+    display: none;
     background: #fff;
     width: 55%;
     margin: 0 auto;
@@ -67,10 +65,10 @@ body {
     border-radius: 5px;
     box-shadow: 0px 0px 31px 1px rgba(0, 0, 0, 0.3);
     max-width: 500px; }
-    .form__container .form__title, .form__container .hidden__title {
+    .form__container .form__title {
       margin-bottom: 20px;
       color: #E34E45; }
-    .form__container .form__input, .form__container .hidden__input {
+    .form__container .form__input {
       display: flex;
       width: 100%;
       border: 0;
@@ -79,7 +77,7 @@ body {
       margin: 40px 0;
       outline: none;
       font-size: 16px; }
-    .form__container .form__button, .form__container .hidden__button {
+    .form__container .form__button {
       width: 100%;
       padding: 10px;
       border-radius: 3px;
@@ -88,10 +86,10 @@ body {
       text-transform: uppercase;
       cursor: pointer;
       margin-top: 20px; }
-      .form__container .form__button:hover, .form__container .hidden__button:hover {
+      .form__container .form__button:hover {
         box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.3);
         background: #008000; }
-    .form__container .form .delete, .form__container .hidden .delete {
+    .form__container .form .delete {
       display: flex;
       justify-content: flex-end;
       text-decoration: none;

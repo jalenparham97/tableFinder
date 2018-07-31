@@ -58,7 +58,7 @@ body {
     align-items: center;
   }
 
-  .available {
+  & .available {
     cursor: pointer;
     background: $color-grey--2;
     &:hover {
@@ -68,8 +68,9 @@ body {
     }
   }
 
-  .reserved {
+  & .reserved {
     background: $color-grey--1;
+    color: $color-grey--3;
   
     &:hover {
       cursor: not-allowed;
@@ -84,13 +85,6 @@ body {
 
   & .form {
     display: none;
-  }
-  
-  & .hidden {
-    display: none;
-  }
-
-  & .form , .hidden {
     background: $color-white;
     width: 55%;
     margin: 0 auto;
