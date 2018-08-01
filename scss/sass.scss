@@ -81,7 +81,7 @@ body {
 .form__container {
   position: absolute;
   width: 100%;
-  top: 200px;
+  top: 100px;
 
   & .form {
     display: none;
@@ -135,6 +135,26 @@ body {
       color: $color-black;
       font-size: 20px;
     }
+  }
+}
+
+.input__vals {
+  background: $color-secondary;
+  width: 130px;
+  margin: 0 auto;
+  padding: 30px 40px;
+  border-radius: 3px;
+  color: $color-grey--3;
+  z-index: 300;
+  display: none;
+  font-size: 12px;
+  position: absolute;
+  top: 15%;
+  left: 35%;
+
+
+  &__vals--title {
+    text-align: center;
   }
 }
 

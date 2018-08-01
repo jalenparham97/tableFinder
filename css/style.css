@@ -53,7 +53,7 @@ body {
 .form__container {
   position: absolute;
   width: 100%;
-  top: 200px; }
+  top: 100px; }
   .form__container .form {
     display: none;
     background: #fff;
@@ -95,3 +95,19 @@ body {
       text-decoration: none;
       color: #000;
       font-size: 20px; }
+
+.input__vals {
+  background: #E34E45;
+  width: 130px;
+  margin: 0 auto;
+  padding: 30px 40px;
+  border-radius: 3px;
+  color: #EEE;
+  z-index: 300;
+  display: none;
+  font-size: 12px;
+  position: absolute;
+  top: 15%;
+  left: 35%; }
+  .input__vals__vals--title {
+    text-align: center; }
